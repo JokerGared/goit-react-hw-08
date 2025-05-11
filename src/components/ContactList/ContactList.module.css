@@ -1,0 +1,17 @@
+.contactItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #fff;
+  width: calc((100% - 40px) / 3);
+  height: 100px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.contactList {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}

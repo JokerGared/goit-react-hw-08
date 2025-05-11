@@ -1,0 +1,12 @@
+.searchBoxHeading {
+  margin-bottom: 10px;
+}
+
+.searchBoxInput {
+  margin-bottom: 70px;
+  font-size: 16px;
+  line-height: 113%;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 400px;
+}

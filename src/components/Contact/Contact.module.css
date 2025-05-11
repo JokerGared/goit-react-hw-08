@@ -1,0 +1,31 @@
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.userNameItem {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.userPhoneItem {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.userName {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 113%;
+}
+.userPhone {
+  font-size: 16px;
+  line-height: 113%;
+}
+
+.deleteBtn {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 113%;
+}
