@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import Layout from "./components/Layout/Layout";
 import { useDispatch, useSelector } from "react-redux";
-import { useEffect } from "react";
+import { lazy, useEffect } from "react";
 import { refreshThunk } from "./redux/auth/operations";
 import { selectIsRefreshing } from "./redux/auth/selectors";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
