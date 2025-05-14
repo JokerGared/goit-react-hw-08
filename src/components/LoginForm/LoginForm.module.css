@@ -1,0 +1,55 @@
+.contactFormContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 30px;
+  width: fit-content;
+  margin-bottom: 30px;
+}
+
+.contactFormInput {
+  font-size: 16px;
+  line-height: 113%;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 400px;
+  margin-bottom: 30px;
+}
+
+.errorEmail {
+  position: absolute;
+  color: red;
+  top: 188px;
+}
+.errorPassword {
+  composes: errorEmail;
+  top: 302px;
+}
+
+.submitBtn {
+  font-size: 16px;
+  line-height: 113%;
+  box-sizing: border-box;
+  padding: 15px 30px;
+}
+
+.heading {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.label {
+  margin-bottom: 12px;
+  align-self: flex-start;
+  font-size: 20px;
+}
+
+.loginLink {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.87);
+  margin-bottom: 12px;
+}

@@ -1,0 +1,22 @@
+.container {
+  padding: 40px 40px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+
+.text {
+  font-size: 24px;
+  line-height: 113%;
+  margin-bottom: 40px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.button {
+  font-size: 16px;
+  width: 100px;
+}

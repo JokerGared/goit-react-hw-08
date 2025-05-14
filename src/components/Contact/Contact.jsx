@@ -1,13 +1,22 @@
 import { FaPhone, FaUser } from "react-icons/fa6";
 import s from "./Contact.module.css";
 import { useDispatch } from "react-redux";
-import { deleteContact } from "../../redux/contactsOps";
+import { openModal } from "../../redux/modal/slice";
 
 export const Contact = ({ contact: { name, number, id } }) => {
   const dispatch = useDispatch();
 
+  const handleEditContact = (name, number, id) => {
+    const contactInfo = {
+      name,
+      number,
+    };
+    dispatch(openModal({ id, contactInfo }));
+  };
+
   const handleDeleteContact = (id) => {
-    dispatch(deleteContact(id));
+    const isDeleting = true;
+    dispatch(openModal({ id, isDeleting }));
   };
   return (
     <>
@@ -21,13 +30,22 @@ export const Contact = ({ contact: { name, number, id } }) => {
           <p className={s.userPhone}>{number}</p>
         </li>
       </ul>
-      <button
-        className={s.deleteBtn}
-        onClick={() => handleDeleteContact(id)}
-        type="button"
-      >
-        Delete
-      </button>
+      <div className={s.buttons}>
+        <button
+          className={s.deleteBtn}
+          onClick={() => handleDeleteContact(id)}
+          type="button"
+        >
+          Delete
+        </button>
+        <button
+          className={s.deleteBtn}
+          onClick={() => handleEditContact(name, number, id)}
+          type="button"
+        >
+          Edit
+        </button>
+      </div>
     </>
   );
 };

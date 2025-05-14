@@ -1,0 +1,11 @@
+.link {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.87);
+  &:not(:last-child) {
+    margin-right: 16px;
+  }
+}
+
+.active {
+  color: #535bf2;
+}

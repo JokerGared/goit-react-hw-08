@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.greeting {
+  font-size: 24px;
+  letter-spacing: 0.03em;
+}
+
+.greetingName {
+  font-weight: 700;
+  color: #535bf2;
+}
+
+.button {
+  font-size: 16px;
+  width: 100px;
+}

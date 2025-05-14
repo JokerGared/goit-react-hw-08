@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+  height: calc(100vh - 42.19px - 64px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  font-size: 60px;
+}
+
+.text {
+  font-size: 24px;
+}

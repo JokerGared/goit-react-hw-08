@@ -1,0 +1,50 @@
+.contactFormContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 30px;
+  width: fit-content;
+}
+
+.contactFormInput {
+  font-size: 16px;
+  line-height: 113%;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 400px;
+  margin-bottom: 30px;
+}
+
+.errorName {
+  position: absolute;
+  color: red;
+  top: 100px;
+}
+.errorNumber {
+  composes: errorName;
+  top: 200px;
+}
+
+.submitBtn {
+  font-size: 16px;
+  line-height: 113%;
+  box-sizing: border-box;
+  width: 120px;
+  height: 50px;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.label {
+  font-size: 16px;
+  line-height: 113%;
+  margin-bottom: 10px;
+}

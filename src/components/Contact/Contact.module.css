@@ -29,3 +29,9 @@
   font-size: 16px;
   line-height: 113%;
 }
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
